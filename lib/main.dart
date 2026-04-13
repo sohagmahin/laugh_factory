@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'jokes_screen.dart';
 import 'jokes_webview_screen.dart';
 
 void main() => runApp(const MyApp());
@@ -27,15 +26,6 @@ class HomeScreen extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
-          ListTile(
-            leading: const Icon(Icons.list),
-            title: const Text('HTML Parsing'),
-            subtitle: const Text('Fetch & parse jokes via http + html'),
-            onTap: () => Navigator.push(
-              context,
-              MaterialPageRoute(builder: (_) => const JokesScreen()),
-            ),
-          ),
           ListTile(
             leading: const Icon(Icons.web),
             title: const Text('WebView'),
