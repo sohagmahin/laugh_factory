@@ -33,7 +33,7 @@ class _JokesWebViewScreenState extends State<JokesWebViewScreen> {
     final result = await _controller.runJavaScriptReturningResult('''
       JSON.stringify(
         Array.from(document.querySelectorAll('#jokes-list li'))
-          .map(li => li.innerText )
+          .map(li => li.innerText + ' - (ID: ' + li.id + ')' )
       )
     ''');
 
